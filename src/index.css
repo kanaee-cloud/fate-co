@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  color: #FFBF18;
+  background: transparent;
+  border: 3px solid #FFBF18;
+  border-radius: 30px;
+  transition: all .50s ease;
+}
+
+
+.about img{
+  border-radius: 20px;
+  height: 340px;
+  width: 540px;
+  box-shadow: 0 8px 32px 0 #4F48EC;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  transition: all .50s ease;
+}
+
+.about img:hover{
+  transform: scale(1.1);
+}
+.glassmorphism{
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.navbar{
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13px );
+  -webkit-backdrop-filter: blur( 13px );
+  border-radius: 30px;
+  border: 1px solid #F0F0F0; 
+}
+
+.btn:hover {
+  background: #FFBF18;
+  color: #100E34;
+  box-shadow: 0 8px 32px 0 #FFBF18;
+  backdrop-filter: blur( 13px );
+  -webkit-backdrop-filter: blur( 13px );
+  border: 3px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.gradient,
+.active {
+  background: #75BFEC;
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-secondary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-secondary font-semibold text-[20px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply font-tertiary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base from-[#FF0000] to-[#950101] hover:from-[#950101] hover:to-[#FF0000];
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#4F48EC] to-[#75BFEC] font-bold font-secondary hover:from-[#e6b400] hover:to-[#e69b00];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
