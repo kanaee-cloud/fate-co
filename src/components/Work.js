@@ -20,11 +20,12 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {/*text*/}
             <div>
-              <h2 className='h2 font-leading tight text-gradient'>
-                私のプロジェクト.
-              </h2>
-              <p className='max-w-sm mb-16 font-primary'>
-              Lorem ipsum dolor sit amet wleowleolwleo i love frieren wleowleolwleo consectetur adipiscing elit. Etiam ante nisi, convallis ut elit a, facilisis tristique risus.
+              <span className='text-[2.5rem] lg:text-[4rem] font-tertiary tight text-gradient'>
+                Work
+              </span>
+              <p className='mt-4 glassmorphism max-w-sm mb-16 font-primary'>
+             Fastafsatfsatfsgasdhagsdandkasda.<br />
+             
               </p>
               <button className='btn btn-sm'>View all projects</button>
             </div>

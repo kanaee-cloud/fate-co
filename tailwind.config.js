@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Poppins',
-      secondary: 'Noto Sans JP',
-      tertiary: 'Poppins',
+      secondary: 'Montserrat',
+      tertiary: 'Revamped',
     },
     container: {
       padding: {
@@ -25,7 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         about: "url('./assets/about.jpg')",
-        services: "url('./assets/services.gif')",
+        // services: "url('./assets/services.gif')",
       },
     },
   },

@@ -11,19 +11,6 @@
 }
 
 
-.about img{
-  border-radius: 20px;
-  height: 340px;
-  width: 540px;
-  box-shadow: 0 8px 32px 0 #4F48EC;
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  transition: all .50s ease;
-}
-
-.about img:hover{
-  transform: scale(1.1);
-}
 .glassmorphism{
   padding: 40px;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -85,7 +72,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#4F48EC] to-[#75BFEC] font-bold font-secondary hover:from-[#e6b400] hover:to-[#e69b00];
+    @apply bg-gradient-to-r text-transparent bg-clip-text  from-[#e6b400] hover:to-[#e69b00] font-bold font-secondary hover:from-[#4F48EC] to-[#75BFEC];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
