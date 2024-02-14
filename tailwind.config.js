@@ -4,7 +4,7 @@ module.exports = {
     fontFamily: {
       primary: 'Poppins',
       secondary: 'Montserrat',
-      tertiary: 'Revamped',
+      tertiary: 'Poppins',
     },
     container: {
       padding: {
