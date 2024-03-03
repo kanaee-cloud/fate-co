@@ -12,7 +12,7 @@ const Header = () => {
     <div className='container mx-auto'>
       <div className='flex justify-between items-center'>
         {/* Logo */}
-        <a href="#" className='font-normal font-secondary text-[2rem]'>
+        <a href="#" className='font-normal font-primary text-[2rem]'>
         sal<span className='text-[#F9D949]'>toru.</span>
         </a>
         {/* button */}

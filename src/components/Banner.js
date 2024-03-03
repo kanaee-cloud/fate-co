@@ -24,21 +24,21 @@ const Banner = () => {
         {/*text*/}
         <div className='flex-1 text-center lg:text-left'>
           <motion.h1 
-            className='lg:text-[90px] text-[3.5rem] leading-[0.8] lg:flex lg:mb-10 mb-10 gap-x-3 font-bold font-tertiary'
+            className='lg:text-[90px] text-[3.5rem] leading-[0.8] lg:flex lg:mb-10 mb-10 gap-x-3 font-bold font-secondary'
             variants={fadeIn('up', 0.3)}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7}}
             >
             <TypeAnimation sequence={[
-              'Hello',
+              'HELLO',
               2000,
               'こんにちは',
               2000,
-              'Hallo',
+              'HALLO',
               2000,
-              'Bonjour',
+              'BOUNJOR',
               2000,
-              'Hola',
+              'HOLA',
               2000,
             ]}
             speed={50}
@@ -48,11 +48,11 @@ const Banner = () => {
             />
           </motion.h1>
           <motion.span 
-            className='lg:text-[90px] text-[3.5rem] text-gradient font-tertiary'
+            className='lg:text-[90px] text-[3.5rem] text-gradient font-primary'
             variants={fadeIn('up', 0.3)}
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7}}
-            >I'm Arsal
+            >I'M ARSAL
           </motion.span>
          
         {/* socials */}

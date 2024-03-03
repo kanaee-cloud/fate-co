@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Poppins',
-      secondary: 'Montserrat',
+      secondary: 'Pixelify Sans',
       tertiary: 'Poppins',
     },
     container: {
@@ -25,6 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         about: "url('./assets/about.jpg')",
+        footer: "linear-gradient(rgba(30, 30, 32, 0.7),rgba(30, 30, 32, 0.7)),url(./assets/footer.gif)"
         // services: "url('./assets/services.gif')",
       },
     },

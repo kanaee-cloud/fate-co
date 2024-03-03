@@ -19,12 +19,12 @@ const Text = () => {
           </motion.div>
           <div className="flex-1 text-center lg:text-left">
           <motion.span 
-            className='lg:text-[90px] text-[3.5rem] text-gradient font-tertiary'
+            className='lg:text-[90px] text-[3.5rem] text-gradient font-secondary'
             variants={fadeIn('up', 0.3)}
             initial="hidden"
             whileInView={'show'}
             viewport={{ once: false, amount: 0.7}}
-            >My project
+            >MY PROJECT
           </motion.span>
           </div>
         </div>

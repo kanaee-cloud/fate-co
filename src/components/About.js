@@ -24,7 +24,7 @@ const About = () => {
             <span className="font-tertiary text-gradient  text-[2.5rem] lg:text-[4rem]">
               About
             </span>
-            <p className="glassmorphism font-primary mt-5 text-[15px]">
+            <p className="glassmorphism font-primary mt-5 font-extralight text-[15px]">
               I like to watch anime, coding and listen to the music. <br /> I'm
               playing game too.
             </p>
