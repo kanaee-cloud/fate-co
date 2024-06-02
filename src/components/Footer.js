@@ -20,7 +20,7 @@ const Footer = () => {
             <FaSpotify size={25} className='fill-yellow-400'/>
           </div>
           <div className='flex justify-center gap-x-9 font-primary opacity-30 mt-10'>
-            ©2024 | saltoru
+            ©2023 | saltoru
           </div>
         </div>
     </section>
