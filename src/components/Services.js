@@ -6,21 +6,24 @@ import { fadeIn } from '../variants';
 const services = [
   {
     name : 'Akiyama Cafe',
-    description : 'Orang jawa minum tolak jawa',
+    description : 'Simple Cafe Web Design using HTML CSS Javascript',
+    language: 'HTML CSS Javascript',
     link : 'Learn more',
     url:'https://akiyama-cafe.vercel.app',
   },
   {
     name : 'Yukinime',
-    description : 'Orang jawa minum tolak jawa',
+    description : 'Fetching data from API MyAnimeList using React Axios and Tailwind CSS',
+    language: 'React Axios Tailwind CSS',
     link : 'Learn more',
     url:'https://yukinime.vercel.app'
   },
   {
-    name: 'Calculator',
-    description: 'Orang jawa minum tolak jawa',
+    name: 'Neo-Kokeshi',
+    description: 'E-commerce website using Vue JS and Tailwind CSS',
+    language: 'Vue JS Tailwind CSS',
     link: 'Learn More',
-    url: 'https://calculator-chan.vercel.app'
+    url: 'https://neo-kokeshi.vercel.app'
   }
 ]
 
@@ -62,6 +65,12 @@ const Services = () => {
                 </div>
                 );
               })}
+            </div>
+            <div>
+              <a href="https://github.com/kanaee-cloud" className='btn btn-lg p-3'>
+              View Another Project on My Github 
+              </a>
+              
             </div>
           </motion.div>
         </div>

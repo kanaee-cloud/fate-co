@@ -65,10 +65,10 @@ const Banner = () => {
           <a href="">
             <FaYoutube />
           </a>
-          <a href="">
+          <a href="https://github.com/kanaee-cloud">
             <FaGithub />
           </a>
-          <a href="">
+          <a href="https://instagram.com/_arsalnaufal">
             <FaInstagram />
           </a>
         </motion.div>
