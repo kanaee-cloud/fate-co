@@ -24,10 +24,17 @@ const About = () => {
             <span className="font-tertiary text-gradient  text-[2.5rem] lg:text-[4rem]">
               About
             </span>
-            <p className="glassmorphism font-primary mt-5 font-extralight text-[15px]">
-              I like to watch anime, coding and listen to the music. <br /> I'm
-              playing game too.
-            </p>
+            <div className="glassmorphism font-primary font-extralight mt-5 text-[15px]">
+              <p>I'm Front-end Developer. I'd like to design a web or development a web. <br /> I can use figma too </p>
+              <p className="font-semibold">What can i do?</p>
+              <div className="flex gap-x-4">
+                <p className="bg-green-500 px-3 rounded-md text-[#1B2430] font-semibold">MongoDB</p>
+                <p className="bg-yellow-500 px-3 rounded-md text-[#1B2430] font-semibold">Express</p>
+                <p className="bg-indigo-500 px-3 rounded-md text-[#1B2430] font-semibold">React</p>
+                <p className="bg-green-200 px-3 rounded-md text-[#1B2430] font-semibold">Node</p>
+                
+              </div>
+            </div>
             {/*stats*/}
             <div className="flex gap-x-6 gap-y-10 lg:gap-x-10 mb-12 mt-12">
               <div>
@@ -40,7 +47,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] text-gradient mb-2">
-                  <CountUp start={0} end={20} duration={15} />
+                  <CountUp start={0} end={31} duration={15} />
                 </div>
                 <div className="text-sm tracking-[2px] font-tertiary">
                   Portfolio
