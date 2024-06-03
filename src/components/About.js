@@ -1,5 +1,6 @@
 import React from "react";
 import CountUp from "react-countup";
+import { TypeAnimation } from "react-type-animation";
 import { useInView } from "react-intersection-observer";
 import Image from "../assets/about.png";
 import { motion } from "framer-motion";
@@ -25,14 +26,37 @@ const About = () => {
               About
             </span>
             <div className="glassmorphism font-primary font-extralight mt-5 text-[15px]">
-              <p>I'm Front-end Developer. I'd like to design a web or development a web. <br /> I can use figma too </p>
+              <p>
+                I'm Front-end Developer. I'd like to design a web or development
+                a web. <br /> I can use figma too{" "}
+              </p>
               <p className="font-semibold">What can i do?</p>
               <div className="flex gap-x-4">
-                <p className="bg-green-500 px-3 rounded-md text-[#1B2430] font-semibold">MongoDB</p>
-                <p className="bg-yellow-500 px-3 rounded-md text-[#1B2430] font-semibold">Express</p>
-                <p className="bg-indigo-500 px-3 rounded-md text-[#1B2430] font-semibold">React</p>
-                <p className="bg-green-200 px-3 rounded-md text-[#1B2430] font-semibold">Node</p>
                 
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed once, initially
+                    "I'm good at React",
+                    1000,
+                    "I'm good at Javascript",
+                    1000,
+                    "I'm good at Vue",
+                    1000,
+                    "I'm good at HTML",
+                    1000,
+                    "I'm good at CSS",
+                    1000,
+                    "I'm good at MySQL",
+                    1000,
+                    "I'm good at MongoDB",
+                    1000,
+                    "I'm good at Laravel",
+                    1000,
+                  ]}
+                  speed={50}
+                  style={{ fontSize: "2em" }}
+                  repeat={Infinity}
+                />
               </div>
             </div>
             {/*stats*/}
