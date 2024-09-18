@@ -13,14 +13,14 @@ import Footer from './components/Footer';
 const App = () => {
   
   return (
-    <div className='bg-[#1B2430] bg-no-repeat bg-cover overflow-hidden'>
+    <div className='bg-[#111215] bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
       <Nav />
       <About />
-      <Text />
-      <Services />
+      {/* <Text /> */}
       <Work />
+      <Services />
       <Contact />
       <Footer />
     </div>

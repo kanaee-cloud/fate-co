@@ -19,13 +19,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        site: "#242F49",
+        gray: "#212121",
         primary: '#0a0a0a',
-        accent: '#B809C3',
+        accent: '	#0092ff',
       },
       backgroundImage: {
         about: "url('./assets/about.jpg')",
-        footer: "linear-gradient(rgba(30, 30, 32, 0.7),rgba(30, 30, 32, 0.7)),url(./assets/footer.gif)"
+        footer: "linear-gradient(rgba(30, 30, 32, 0.7),rgba(30, 30, 32, 0.7)),url(./assets/footer.gif)",
+        main: "linear-gradient(rgba(30, 30, 32, 0.7),rgba(30, 30, 32, 0.7)),url(./assets/bg-main.jpg)"
         // services: "url('./assets/services.gif')",
       },
     },

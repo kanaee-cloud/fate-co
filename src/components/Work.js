@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
-import Img1 from '../assets/portfolio-img1.jpg';
-import Img2 from '../assets/portfolio-img2.gif';
-import Img3 from '../assets/portfolio-img3.gif';
+import Img1 from '../assets/aku-prima.jpg';
+import Img2 from '../assets/orbit.jpg';
+import Img3 from '../assets/web-assessment.png';
 
 
 
@@ -20,12 +20,11 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {/*text*/}
             <div>
-              <span className='text-[2.5rem] lg:text-[4rem] font-tertiary tight text-gradient'>
-                Work
+              <span className='text-[2.5rem] lg:text-[4rem] font-tertiary tight text-accent font-semibold'>
+                My Project
               </span>
-              <p className='mt-4 glassmorphism max-w-sm mb-16 font-primary'>
-             Fastafsatfsatfsgasdhagsdandkasda.<br />
-             
+              <p className='glassmorphism max-w-sm mb-14 font-primary'>
+                Some of project i do when i was learning and work.
               </p>
               <button className='btn btn-sm'>View all projects</button>
             </div>
@@ -46,13 +45,13 @@ const Work = () => {
                 <span 
                   className='text-gradient'
                   >
-                    UI/UX Design
+                    Pay Tax Web
                 </span>
               </div>
               {/*title*/}
               <div 
                 className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Soon</span>
+                <span className='text-3xl text-white font-primary font-semibold'>Aku Prima</span>
               </div>
               {/*pretitle*/}
               <div>
@@ -82,13 +81,13 @@ const Work = () => {
                 <span 
                   className='text-gradient'
                   >
-                    UI/UX Design
+                   Learning Management System
                 </span>
               </div>
               {/*title*/}
               <div 
                 className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Soon</span>
+                <span className='text-3xl text-white font-primary font-semibold tracking-wide'>ORBIT</span>
               </div>
               {/*pretitle*/}
               <div>
@@ -111,7 +110,7 @@ const Work = () => {
                 <span 
                   className='text-gradient'
                   >
-                    UI/UX Design
+                    Assessment Web
                 </span>
               </div>
               {/*title*/}
