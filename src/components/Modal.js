@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaTimes } from "react-icons/fa";
+import { FaGithub, FaTimes } from "react-icons/fa";
 
 const Modal = ({ isOpen, onClose, project: service }) => {
     if (!isOpen) return null;
@@ -37,9 +37,9 @@ const Modal = ({ isOpen, onClose, project: service }) => {
             href={service.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 underline block mt-4"
+            className="flex items-center gap-2 bg-black justify-center mt-2 rounded-md hover:bg-gray py-2 transition-colors"
           >
-            Kunjungi Situs
+            <FaGithub /> Github Repository
           </a>
         </motion.div>
       </motion.div>

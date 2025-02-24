@@ -22,7 +22,7 @@ const services = [
     name: "Akuprim",
     description:
       "Berkontribusi sebagai Front-end Developer pada pengembangan platform daring Akuprim yang menyederhanakan pembayaran pajak, membantu konsultan pajak menghemat waktu dan mengurangi risiko kesalahan.",
-    url: "https://akiyama-cafe.vercel.app",
+    url: "https://gitlab.com/teknikal/aku-prima.git",
     periode: "Juli 2024 - Agustus 2024",
     img: Img1,
     frameworks: ["Laravel", "MySQL", "Tailwind", "Font Awesome"],
@@ -31,7 +31,7 @@ const services = [
     name: "Web Assessment",
     description:
       "Membangun platform assessment daring untuk memfasilitasi proses rekrutmen karyawan dan identifikasi kandidat terbaik untuk perusahaan.",
-    url: "https://yukinime.vercel.app",
+    url: "https://gitlab.com/teknikal/web-assessment.git",
     periode: "Agustus 2024 - September 2024",
     img: Img2,
     frameworks: ["Laravel", "Bootstrap", "Vanilla JS", "Excel JS", "PostgreSQL"],
@@ -39,8 +39,8 @@ const services = [
   {
     name: "ORBIT",
     description:
-      "Bertanggung jawab atas pengembangan situs web LMS untuk eskul Orbit dari sisi Front-End, memastikan tampilan yang menarik, user-friendly, dan responsif.Berkolaborasi dalam pengembangan perangkat lunak melalui platform GitHub, memanfaatkan fitur pull request dan branching untuk memastikan kualitas kode dan alur kerja yang efisien.",
-    url: "https://neo-kokeshi.vercel.app",
+      "Bertanggung jawab atas pengembangan situs web LMS untuk eskul Orbit dari sisi Front-End, memastikan tampilan yang menarik, user-friendly, dan responsif.",
+    url: "https://github.com/orbit4it/web-frontend.git",
     periode: "Juni 2023 - September 2023",
     img: Img3,
     frameworks: ["Next.js", "TypeScript", "Python", "Tailwind", "PostgreSQL", "Fast API"],
@@ -77,7 +77,7 @@ const Services = () => {
             <div>
               {services.map((service, index) => (
                 <div
-                  className="border-b border-[#75BFEC]/70 p-5 rounded-lg shadow-md mb-6 flex cursor-pointer flex-col"
+                  className="border border-[#75BFEC]/70 p-5 rounded-lg shadow-md mb-6 flex cursor-pointer flex-col"
                   key={index}
                   onClick={() => openModal(service)}
                 >
@@ -111,7 +111,7 @@ const Services = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn w-9 h-9 flex justify-center items-center"
-                      onClick={(e) => e.stopPropagation()} // Mencegah modal terbuka saat klik tombol
+                      onClick={(e) => e.stopPropagation()} 
                     >
                       <BsArrowUpRight />
                     </a>
