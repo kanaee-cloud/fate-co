@@ -8,6 +8,11 @@ import Img3 from '../assets/web-assessment.png';
 
 
 const Work = () => {
+
+  const toGithub = () => {
+    window.open('https://github.com/kanaee-cloud');
+  }
+
   return (
     <section className='section' id='work'>
       <div className='container mx-auto'>
@@ -24,9 +29,9 @@ const Work = () => {
                 My Project
               </span>
               <p className='glassmorphism max-w-sm mb-14 font-primary'>
-                Some of project i do when i was learning and work.
+                 Proyek yang saya kerjakan saat ini
               </p>
-              <button className='btn btn-sm'>View all projects</button>
+              <button onClick={toGithub} className='btn btn-sm'>Lihat semua proyek</button>
             </div>
             {/*image*/}
             <div 
@@ -38,20 +43,23 @@ const Work = () => {
               </div>
               {/*img*/}
               <img 
-                className='group-hover:scale-125 transition-all duration-500' src={Img1}/>
+                className='group-hover:scale-125 transition-all duration-500' src={Img1}
+                alt=''
+                />
               {/*pretitle*/}
               <div 
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span 
+                {/* <span 
                   className='text-gradient'
                   >
-                    Pay Tax Web
-                </span>
+                    Akuprim
+                </span> */}
               </div>
               {/*title*/}
               <div 
-                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white font-primary font-semibold'>Aku Prima</span>
+                className='absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50'>
+                  <span className='font-primary text-gradient'>Akuprim</span> <br />
+                <span className='text-sm text-justify text-white font-primary font-semibold'>Berkontribusi sebagai Front-end Developer pada pengembangan platform daring Akuprim yang menyederhanakan pembayaran pajak, membantu konsultan pajak menghemat waktu dan mengurangi risiko kesalahan.</span>
               </div>
               {/*pretitle*/}
               <div>
@@ -74,20 +82,21 @@ const Work = () => {
               </div>
               {/*img*/}
               <img 
-                className='group-hover:scale-125 transition-all duration-500' src={Img2}/>
+                className='group-hover:scale-125 transition-all duration-500' src={Img2} alt=''/>
               {/*pretitle*/}
               <div 
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span 
+                {/* <span 
                   className='text-gradient'
                   >
                    Learning Management System
-                </span>
+                </span> */}
               </div>
               {/*title*/}
               <div 
-                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white font-primary font-semibold tracking-wide'>ORBIT</span>
+                className='absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50'>
+                  <span className='font-primary text-gradient'>LMS ORBIT</span> <br />
+                <span className='text-sm text-white font-primary '>Bertanggung jawab atas pengembangan situs web LMS untuk eskul Orbit dari sisi Front-End, memastikan tampilan yang menarik, user-friendly, dan responsif.</span>
               </div>
               {/*pretitle*/}
               <div>
@@ -103,20 +112,21 @@ const Work = () => {
               </div>
               {/*img*/}
               <img 
-                className='group-hover:scale-125 transition-all duration-500' src={Img3}/>
+                className='group-hover:scale-125 transition-all duration-500' src={Img3} alt=''/>
               {/*pretitle*/}
               <div 
                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span 
+                {/* <span 
                   className='text-gradient'
                   >
                     Assessment Web
-                </span>
+                </span> */}
               </div>
               {/*title*/}
               <div 
                 className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Soon</span>
+                  <span className='font-primary text-gradient'>Assessment Web</span> <br />
+                <span className='text-sm font-primary text-white'>Membangun platform assessment daring untuk memfasilitasi proses rekrutmen karyawan dan identifikasi kandidat terbaik untuk perusahaan.</span>
               </div>
               {/*pretitle*/}
               <div>

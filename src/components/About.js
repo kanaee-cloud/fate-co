@@ -2,7 +2,7 @@ import React from "react";
 import CountUp from "react-countup";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import Image from "../assets/bg-profile-2.jpg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -56,9 +56,9 @@ const frameworks = [
 ];
 
 const About = () => {
-  const [inViewRef, inView] = useInView({
-    threshold: 0.5,
-  });
+  // const [inViewRef, inView] = useInView({
+  //   threshold: 0.5,
+  // });
 
   return (
     <section className="section" id="about">
@@ -97,10 +97,10 @@ const About = () => {
             <div className="font-primary font-extralight mt-5 text-[15px]">
               <div className="flex flex-col text-justify gap-y-4">
                 <h1 className="font-semibold text-2xl">About Me</h1>
-                <p className="text-sm">
-                  I'm a student of Vocational High School, with a focus on
-                  building responsive websites. <br /> I like to use Javascript
-                  as my programming language.
+                <p className="text-sm text-justify">
+                  Saya adalah seorang profesional IT yang sangat tertarik dengan
+                  pengembangan perangkat lunak, <br/> terutama di bidang software
+                  engineering. 
                 </p>
               </div>
             </div>
@@ -109,18 +109,18 @@ const About = () => {
             <div className="flex gap-x-6 gap-y-10 lg:gap-x-10 mb-12 mt-12">
               <div className="flex items-center gap-x-2">
                 <div className="text-sm">
-                  <CountUp start={0} end={17} duration={15} />
+                  <CountUp start={0} end={18} duration={15} />
                 </div>
                 <div className="text-sm tracking-[2px] font-primary">
-                  Years Old
+                  Tahun
                 </div>
               </div>
               <div className="flex items-center gap-x-2">
                 <div className="text-sm">
-                  <CountUp start={0} end={31} duration={15} />
+                  <CountUp start={0} end={38} duration={15} />
                 </div>
                 <div className="text-sm tracking-[2px] font-tertiary">
-                  Portfolio
+                  Repository
                 </div>
               </div>
               <div className="flex items-center gap-x-2">
@@ -141,15 +141,15 @@ const About = () => {
           viewport={{ once: false, amount: 0.3 }}
           className="font-primary mt-5"
         >
-          <h1 className="font-semibold">What I use?</h1>
-          <p className="text-sm opacity-40">These are the frameworks I use</p>
+          <h1 className="font-semibold">Apa yang saya gunakan?</h1>
+          <p className="text-sm opacity-40">Beberapa framework yang saya gunakan</p>
           <div className="mt-5">
             <Swiper
               effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={3} 
-              loop={true} 
+              slidesPerView={3}
+              loop={true}
               spaceBetween={30}
               coverflowEffect={{
                 rotate: 50,

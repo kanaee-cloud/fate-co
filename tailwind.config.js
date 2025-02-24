@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Poppins',
-      secondary: 'Pixelify Sans',
-      tertiary: 'Poppins',
+      primary: 'Lexend',
+      secondary: 'Lexend',
+      tertiary: 'Lexend',
     },
     container: {
       padding: {

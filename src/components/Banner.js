@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "../assets/bg-profile.jpg";
 import { FaGithub, FaYoutube, FaInstagram } from "react-icons/fa";
-import { AiFillCaretRight } from "react-icons/ai";
+// import { AiFillCaretRight } from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -23,8 +23,8 @@ const Banner = () => {
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
               >
-                <p className="text-4xl lg:text-[4.5rem] text-gradient font-primary">Hello!</p>
-                <p className="text-lg lg:text-xl opacity-40 mt-3 lg:mt-6 hover:underline transition-all decoration-accent">I'm Arsal</p>
+                <p className="text-4xl lg:text-[4.5rem] text-gradient font-primary">Halo!</p>
+                <p className="text-lg lg:text-xl opacity-40 mt-3 lg:mt-6 hover:underline transition-all decoration-accent">Nama Saya Arsal</p>
               </motion.div>
               <motion.div
                 className="flex justify-center lg:justify-start gap-x-2 mt-5  font-primary"
@@ -32,7 +32,7 @@ const Banner = () => {
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
               >
-                <p className="opacity-80">I'm a</p>
+                <p className="opacity-80">Aku seorang</p>
                 <TypeAnimation
                     sequence={[
                       "Web Developer",
@@ -62,7 +62,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
             >
               
-              <a href="" className="flex items-center gap-x-2 background-gray rounded-md px-4 py-2">
+              <a href="https://www.youtube.com/@ryuuziverse6399" className="flex items-center gap-x-2 background-gray rounded-md px-4 py-2">
                 <FaYoutube />
                 <p className="text-sm font-semibold font-primary">
                   YouTube

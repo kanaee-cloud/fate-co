@@ -81,6 +81,16 @@ body {
   background-color: #eaeaea;
 }
 
+.live2d-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white;
