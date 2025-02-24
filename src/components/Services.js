@@ -1,83 +1,131 @@
-import React from 'react';
-import { BsArrowUpRight } from 'react-icons/bs';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
+import React, { useState } from "react";
+import { BsArrowUpRight } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+import Img1 from "../assets/aku-prima.jpg";
+import Img2 from "../assets/web-assessment.png";
+import Img3 from "../assets/orbit.jpg";
+import Modal from "./Modal";
+
+// Warna untuk setiap framework
+// const frameworkColors = {
+//   Laravel: "border-red-500",
+//   MySQL: "border-orange-500",
+//   Bootstrap: "border-yellow-500",
+//   "Vanilla JS": "border-green-500",
+//   "Next.js": "border-purple-500",
+//   TypeScript: "border-blue-500",
+// };
 
 const services = [
   {
-    name : 'TOEIC',
-    description : 'Meraih skor 510 pada tes TOEIC yang diselenggarakan oleh Educational Testing Service, menunjukkan kemampuan bahasa inggris yang cukup baik.',
-    // language: 'HTML CSS Javascript',
-    // link : 'Learn more',
-    url:'https://akiyama-cafe.vercel.app',
-    img: ""
+    name: "Akuprim",
+    description:
+      "Berkontribusi sebagai Front-end Developer pada pengembangan platform daring Akuprim yang menyederhanakan pembayaran pajak, membantu konsultan pajak menghemat waktu dan mengurangi risiko kesalahan.",
+    url: "https://akiyama-cafe.vercel.app",
+    periode: "Juli 2024 - Agustus 2024",
+    img: Img1,
+    frameworks: ["Laravel", "MySQL", "Tailwind", "Font Awesome"],
   },
   {
-    name : 'Fundamental Javascript',
-    description : 'Menyelesaikan pelatihan Front-end Fundamental Javascript dari Dicoding pada tahun 2025, yang berfokus pada pengembangan kemampuan dasar Javascript untuk front-end web.',
-    // language: 'React Axios Tailwind CSS',
-    // link : 'Learn more',
-    url:'https://yukinime.vercel.app',
-    img: ""
+    name: "Web Assessment",
+    description:
+      "Membangun platform assessment daring untuk memfasilitasi proses rekrutmen karyawan dan identifikasi kandidat terbaik untuk perusahaan.",
+    url: "https://yukinime.vercel.app",
+    periode: "Agustus 2024 - September 2024",
+    img: Img2,
+    frameworks: ["Laravel", "Bootstrap", "Vanilla JS", "Excel JS", "PostgreSQL"],
   },
   {
-    name: 'UKBI',
-    description: 'Memperoleh skor 606 pada tes uji kemahiran berbahasa Indonesia yang diselenggarakan Badan Pengembangan dan Pembinaan Bahasa pada tahun 2024. Skor tersebut menunjukan bahwa saya memiliki predikat unggul dan memadai dalam berkomunikasi menggunakan Bahasa Indonesia.',
-    // language: 'Vue JS Tailwind CSS',
-    // link: 'Learn More',
-    url: 'https://neo-kokeshi.vercel.app',
-    img: ""
-  }
-]
-
+    name: "ORBIT",
+    description:
+      "Bertanggung jawab atas pengembangan situs web LMS untuk eskul Orbit dari sisi Front-End, memastikan tampilan yang menarik, user-friendly, dan responsif.Berkolaborasi dalam pengembangan perangkat lunak melalui platform GitHub, memanfaatkan fitur pull request dan branching untuk memastikan kualitas kode dan alur kerja yang efisien.",
+    url: "https://neo-kokeshi.vercel.app",
+    periode: "Juni 2023 - September 2023",
+    img: Img3,
+    frameworks: ["Next.js", "TypeScript", "Python", "Tailwind", "PostgreSQL", "Fast API"],
+  },
+];
 
 const Services = () => {
+  const [selectedService, setSelectedService] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (service) => {
+    setSelectedService(service);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const toGithub = () => {
+    window.open("https://github.com/kanaee-cloud");
+  };
+
   return (
-    <section className='section mb-14' id='services'>
-      <div className='container mx-auto'>
-        
-        {/*text & image*/}
-          
-        <div className='flex flex-col lg:flex-row lg:gap-x-10'>
-          {/*service*/}
-          <motion.div 
-            variants={fadeIn('left', 0.5)}
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3}} 
-            className='flex-1'>
-            {/*services list*/}
+    <section className="section mb-14" id="work">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row lg:gap-x-10">
+          <motion.div
+            variants={fadeIn("left", 0.5)}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1"
+          >
             <div>
-              {services.map((services, index) => {
-                const {name, description, url} = services;
-                return (
-                <div 
-                  className='border-b border-[#75BFEC]/70 h-[146px] mb-6 flex'
-                  key={index}>
-                  <div className='max-w-[476px]'>
-                    <h4 className='text-[15px] lg:text-[2rem] text-gradient  font-tertiary font-semibold mb-4'>{name}</h4>
-                    <p className='text-sm font-primary leading-tight'>{description}</p>
+              {services.map((service, index) => (
+                <div
+                  className="border-b border-[#75BFEC]/70 p-5 rounded-lg shadow-md mb-6 flex cursor-pointer flex-col"
+                  key={index}
+                  onClick={() => openModal(service)}
+                >
+                  <div className="flex items-center mb-3">
+                    <img src={service.img} alt="" className="w-52 object-cover rounded-lg mr-4" />
+                    <div>
+                      <h4 className="text-[15px] lg:text-[2rem] text-gradient font-tertiary font-semibold">
+                        {service.name}
+                      </h4>
+                      <p className="text-sm font-primary leading-tight opacity-80 text-gray-700">
+                        {service.periode}
+                      </p>
+                    </div>
                   </div>
-                  <div className='font-tertiary flex flex-col flex-1 items-end'>
-                    <a href={url} className='btn w-9 h-9 mb-7 flex justify-center pt-[6px]'>
+
+                  {/* Framework List */}
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {service.frameworks.map((framework, idx) => (
+                      <span
+                        key={idx}
+                        className={`px-3 py-1 text-sm font-semibold border font-primary opacity-80 rounded-md framework-card text-accent`}
+                      >
+                        {framework}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="font-tertiary flex flex-col items-end mt-3">
+                    <a
+                      href={service.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn w-9 h-9 flex justify-center items-center"
+                      onClick={(e) => e.stopPropagation()} // Mencegah modal terbuka saat klik tombol
+                    >
                       <BsArrowUpRight />
                     </a>
-                    {/* <a href="" className='text-gradient font-tertiary text-sm'>
-                      {link}
-                    </a> */}
                   </div>
                 </div>
-                );
-              })}
+              ))}
             </div>
-            {/* <div>
-              <a href="https://github.com/kanaee-cloud" className='btn btn-lg p-3'>
-              View Another Project on My Github 
-              </a>
-              
-            </div> */}
           </motion.div>
         </div>
+        <button className="btn btn-lg" onClick={toGithub}>
+          View All My Project on Github
+        </button>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} project={selectedService} />
     </section>
   );
 };

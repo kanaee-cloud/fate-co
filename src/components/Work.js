@@ -1,142 +1,96 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
-import Img1 from '../assets/aku-prima.jpg';
-import Img2 from '../assets/orbit.jpg';
-import Img3 from '../assets/web-assessment.png';
-
-
+import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+import Img1 from "../assets/serti-1.png";
+import Img2 from "../assets/serti-2.png";
+import Img3 from "../assets/serti-3.jpg";
 
 const Work = () => {
-
-  const toGithub = () => {
-    window.open('https://github.com/kanaee-cloud');
-  }
-
   return (
-    <section className='section' id='work'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col lg:flex-row gap-x-10'>
-          <motion.div 
-            variants={fadeIn('right', 0.3)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3}}
-            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
-            {/*text*/}
+    <section className="section" id="services">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row gap-x-10">
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+          >
+            {/* Text */}
             <div>
-              <span className='text-[2.5rem] lg:text-[4rem] font-tertiary tight text-accent font-semibold'>
-                My Project
+              <span className="text-[2.5rem] lg:text-[4rem] font-tertiary tight text-accent font-semibold">
+                Certificate
               </span>
-              <p className='glassmorphism max-w-sm mb-14 font-primary'>
-                 Proyek yang saya kerjakan saat ini
+              <p className="glassmorphism max-w-sm mb-14 font-primary">
+                Beberapa sertifikat yang saya miliki saat ini  
               </p>
-              <button onClick={toGithub} className='btn btn-sm'>Lihat semua proyek</button>
             </div>
-            {/*image*/}
-            <div 
-              className='group relative overflow-hidden border-2 border-white/50 rounded-xl'> 
-              {/*overlay*/}
-              <div 
-                className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>
-
-              </div>
-              {/*img*/}
-              <img 
-                className='group-hover:scale-125 transition-all duration-500' src={Img1}
-                alt=''
-                />
-              {/*pretitle*/}
-              <div 
-                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                {/* <span 
-                  className='text-gradient'
-                  >
-                    Akuprim
-                </span> */}
-              </div>
-              {/*title*/}
-              <div 
-                className='absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50'>
-                  <span className='font-primary text-gradient'>Akuprim</span> <br />
-                <span className='text-sm text-justify text-white font-primary font-semibold'>Berkontribusi sebagai Front-end Developer pada pengembangan platform daring Akuprim yang menyederhanakan pembayaran pajak, membantu konsultan pajak menghemat waktu dan mengurangi risiko kesalahan.</span>
-              </div>
-              {/*pretitle*/}
-              <div>
-                
+            {/* Image */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              {/* Overlay */}
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              {/* Img */}
+              <img
+                className="group-hover:scale-125 transition-all duration-500 w-full h-[250px] object-cover"
+                src={Img1}
+                alt="Dicoding"
+              />
+              {/* Title & Description */}
+              <div className="absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="font-primary text-gradient">Fundamental Front-end Dev</span> <br />
+                <span className="text-sm text-white font-primary font-semibold">
+                Menyelesaikan pelatihan Front-end Fundamental Javascript dari Dicoding pada tahun 2025, yang berfokus pada pengembangan kemampuan dasar Javascript untuk front-end web.
+                </span>
               </div>
             </div>
           </motion.div>
-          <motion.div 
-            variants={fadeIn('left', 0.2)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3}} 
-            className='flex-1 flex flex-col gap-y-10'>
-            {/*image*/}
-            <div 
-              className='group relative overflow-hidden border-2 border-white/50 rounded-xl'> 
-              {/*overlay*/}
-              <div 
-                className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>
-              </div>
-              {/*img*/}
-              <img 
-                className='group-hover:scale-125 transition-all duration-500' src={Img2} alt=''/>
-              {/*pretitle*/}
-              <div 
-                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                {/* <span 
-                  className='text-gradient'
-                  >
-                   Learning Management System
-                </span> */}
-              </div>
-              {/*title*/}
-              <div 
-                className='absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50'>
-                  <span className='font-primary text-gradient'>LMS ORBIT</span> <br />
-                <span className='text-sm text-white font-primary '>Bertanggung jawab atas pengembangan situs web LMS untuk eskul Orbit dari sisi Front-End, memastikan tampilan yang menarik, user-friendly, dan responsif.</span>
-              </div>
-              {/*pretitle*/}
-              <div>
-                
+
+          <motion.div
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 flex flex-col gap-y-10"
+          >
+            {/* Image */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              {/* Overlay */}
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              {/* Img */}
+              <img
+                className="group-hover:scale-125 transition-all duration-500 w-full h-[250px] object-cover"
+                src={Img2}
+                alt="UKBI"
+              />
+              {/* Title & Description */}
+              <div className="absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="font-primary text-gradient">UKBI</span> <br />
+                <span className="text-sm text-white font-primary">
+                Memperoleh skor 606 pada tes uji kemahiran berbahasa Indonesia yang diselenggarakan Badan Pengembangan dan Pembinaan Bahasa pada tahun 2024. Skor tersebut menunjukkan bahwa saya memiliki predikat unggul dan memadai dalam berkomunikasi menggunakan Bahasa Indonesia.
+                </span>
               </div>
             </div>
-            <div 
-              className='group relative overflow-hidden border-2 border-white/50 rounded-xl'> 
-              {/*overlay*/}
-              <div 
-                className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>
 
-              </div>
-              {/*img*/}
-              <img 
-                className='group-hover:scale-125 transition-all duration-500' src={Img3} alt=''/>
-              {/*pretitle*/}
-              <div 
-                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                {/* <span 
-                  className='text-gradient'
-                  >
-                    Assessment Web
-                </span> */}
-              </div>
-              {/*title*/}
-              <div 
-                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                  <span className='font-primary text-gradient'>Assessment Web</span> <br />
-                <span className='text-sm font-primary text-white'>Membangun platform assessment daring untuk memfasilitasi proses rekrutmen karyawan dan identifikasi kandidat terbaik untuk perusahaan.</span>
-              </div>
-              {/*pretitle*/}
-              <div>
-                
+            {/* Image */}
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              {/* Overlay */}
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              {/* Img */}
+              <img
+                className="group-hover:scale-125 transition-all duration-500 w-full h-[250px] object-cover"
+                src={Img3}
+                alt="TOEIC "
+              />
+              {/* Title & Description */}
+              <div className="absolute -bottom-full left-8 group-hover:bottom-14 transition-all duration-700 z-50">
+                <span className="font-primary text-gradient">TOEIC ETS</span> <br />
+                <span className="text-sm text-white font-primary">
+                Meraih skor 510 pada tes TOEIC yang diselenggarakan oleh Educational Testing Service, menunjukkan kemampuan bahasa Inggris yang cukup baik.
+                </span>
               </div>
             </div>
           </motion.div>
-          <div>
-            
-          </div>
         </div>
       </div>
     </section>

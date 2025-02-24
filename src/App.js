@@ -9,6 +9,7 @@ import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Text from './components/Text';
 // import AnimeChar from './components/Live2DViewer';
 
 const App = () => {
@@ -19,8 +20,8 @@ const App = () => {
       <Banner />
       <Nav />
       <About />
-      {/* <Text /> */}
       <Work />
+      <Text />
       <Services />
       <Contact />
       <Footer />

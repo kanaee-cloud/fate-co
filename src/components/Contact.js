@@ -84,7 +84,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
           >
             <span className="text-gradient font-tertiary text-[2rem]">
-              Lets talk!
+              Hubungi Saya
             </span>
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:opacity-50 focus:border-gradient transition-all"
