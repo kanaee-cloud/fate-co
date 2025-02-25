@@ -53,6 +53,18 @@ const frameworks = [
     imagesUrl:
       "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
   },
+  {
+    name: "Vite",
+    url: "https://expressjs.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/640px-Vitejs-logo.svg.png",
+  },
+  {
+    name: "Firebase",
+    url: "https://expressjs.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Firebase_Logo_%28No_wordmark%29_%282024-%29.svg/640px-Firebase_Logo_%28No_wordmark%29_%282024-%29.svg.png",
+  },
 ];
 
 const About = () => {
@@ -100,7 +112,7 @@ const About = () => {
                 <p className="text-sm text-justify">
                   Saya adalah seorang profesional IT yang sangat tertarik dengan
                   pengembangan perangkat lunak, <br/> terutama di bidang software
-                  engineering. 
+                  engineering. Saya memiliki keahlian yang solid dalam pengembangan <br /> front-end dan back-end, dengan pengalaman dalam membangun aplikasi web yang responsif <br /> dan efisien.
                 </p>
               </div>
             </div>
@@ -117,20 +129,20 @@ const About = () => {
               </div>
               <div className="flex items-center gap-x-2">
                 <div className="text-sm">
-                  <CountUp start={0} end={38} duration={15} />
+                  <CountUp start={0} end={45} duration={10} />
                 </div>
                 <div className="text-sm tracking-[2px] font-tertiary">
                   Repository
                 </div>
               </div>
-              <div className="flex items-center gap-x-2">
+              {/* <div className="flex items-center gap-x-2">
                 <div className="text-sm">
                   <CountUp start={0} end={110} duration={15} />
                 </div>
                 <div className="text-sm tracking-[2px] font-tertiary">
                   Waifu
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </motion.div>
@@ -173,14 +185,14 @@ const About = () => {
                       <h1 className="text-sm font-semibold">
                         {framework.name}
                       </h1>
-                      <a
+                      {/* <a
                         href={framework.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-xs opacity-60"
                       >
                         {framework.url}
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </SwiperSlide>
