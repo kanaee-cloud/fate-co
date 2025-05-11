@@ -1,105 +1,172 @@
-import React from "react";
-import Image from "../assets/bg-profile.jpg";
-import { FaGithub, FaYoutube, FaInstagram } from "react-icons/fa";
-// import { AiFillCaretRight } from "react-icons/ai";
-import { TypeAnimation } from "react-type-animation";
+import { FaTerminal } from "react-icons/fa";
+import { IoIosStats } from "react-icons/io";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import CountUp from "react-countup";
+
+const frameworks = [
+  {
+    name: "React",
+    url: "https://reactjs.org/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+  },
+  {
+    name: "Next.js",
+    url: "https://nextjs.org/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+  },
+  {
+    name: "Laravel",
+    url: "https://laravel.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+  },
+  {
+    name: "Tailwind",
+    url: "https://tailwindcss.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+  },
+  {
+    name: "MongoDB",
+    url: "https://www.mongodb.com/",
+    imagesUrl: "https://www.svgrepo.com/show/331488/mongodb.svg",
+  },
+  {
+    name: "Node.js",
+    url: "https://nodejs.org/en/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+  },
+  {
+    name: "Express.js",
+    url: "https://expressjs.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+  },
+  {
+    name: "Vite",
+    url: "https://expressjs.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/640px-Vitejs-logo.svg.png",
+  },
+  {
+    name: "Firebase",
+    url: "https://expressjs.com/",
+    imagesUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Firebase_Logo_%28No_wordmark%29_%282024-%29.svg/640px-Firebase_Logo_%28No_wordmark%29_%282024-%29.svg.png",
+  },
+];
 
 const Banner = () => {
   return (
-    <section
-      className="min-h-[125vh] lg:min-h-[80vh] flex items-center"
-      id="home"
-    >
-      <div className="container mx-auto">
-        <div className="flex flex-col gap-y-5 lg:flex-row lg:items-center justify-center lg:gap-x-16">
-          {/*text*/}
-          <div className="flex-1 text-center lg:text-left">
-            <div className="flex flex-col">
-              <motion.div
-                className="flex justify-center lg:justify-start gap-x-2 font-semibold font-primary"
-                variants={fadeIn("up", 0.3)}
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <p className="text-4xl lg:text-[4.5rem] text-gradient font-primary">Halo!</p>
-                <p className="text-lg lg:text-xl opacity-40 mt-3 lg:mt-6 hover:underline transition-all decoration-accent">Nama Saya Arsal</p>
-              </motion.div>
-              <motion.div
-                className="flex justify-center lg:justify-start gap-x-2 mt-5  font-primary"
-                variants={fadeIn("up", 0.3)}
-                whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <p className="opacity-80">Aku seorang</p>
-                <TypeAnimation
-                    sequence={[
-                      "Web Developer",
-                      2000,
-                      "Front-end Developer",
-                      2000,
-                      "UI/UX Designer",
-                      2000,
-                      "Weebs",
-                      2000,
-                      
-                    ]}
-                    speed={50}
-                    className="text-accent"
-                    wrapper="span"
-                    repeat={Infinity}
-                  />
-              </motion.div>
-            </div>
-
-            {/* socials */}
-            <p className="font-primary text-sm mt-5">Find me on</p>
-            <motion.div
-              className="icon mt-5 flex  text-[20px] gap-x-5 max-w-max mx-auto lg:mx-0  text-accent"
-              variants={fadeIn("up", 0.7)}
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-            >
-              
-              <a href="https://www.youtube.com/@ryuuziverse6399" className="flex items-center gap-x-2 background-gray rounded-md px-4 py-2">
-                <FaYoutube />
-                <p className="text-sm font-semibold font-primary">
-                  YouTube
-                </p>
-              </a>
-              <a href="https://github.com/kanaee-cloud" className="flex items-center gap-x-2 background-gray rounded-md px-4 py-2">
-                <FaGithub />
-                <p className="text-sm font-semibold font-primary">
-                  Github
-                </p>
-              </a>
-              <a href="https://instagram.com/_arsalnaufal" className="flex items-center gap-x-2 background-gray rounded-md px-4 py-2">
-                <FaInstagram />
-                <p className="text-sm font-semibold font-primary">
-                  Instagram
-                </p>
-              </a>
-            </motion.div>
-          </div>
-          {/*image*/}
-          <motion.div
-            className=" lg:flex flex-1 mx-auto background-glass max-w-[320px] lg:max-w-[300px]"
-            variants={fadeIn("down", 0.8)}
-            whileInView={"show"}
-            initial="show"
-            viewport={{ once: false, amount: 0.7 }}
-          >
-            <img
-              src={Image}
-              alt=""
-              width={[500]}
-              height={[500]}
-              className="rounded-lg"
-            />
-          </motion.div>
-        </div>
+    <section className="w-full flex flex-col items-center" id="home">
+      <div className="">
+        <h1 className="text-3xl mb-5 font-semibold">👋Hi, I'm Arsal Nawfal!</h1>
+        <h2 className="text-[16px] text-justify opacity-70 font-light">
+          Recent graduate with a solid understanding of front-end development
+          and a passion for creating engaging web experiences. I bring hands-on
+          experience with popular JavaScript frameworks such as React, Vue.js,
+          and Next.js, allowing me to develop scalable and performant
+          applications. My drive extends beyond the front end, with a growing
+          interest in the diverse landscape of software engineering.
+        </h2>
       </div>
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+        className="max-w-[800px] w-full mt-10"
+      >
+        <div className="mb-8">
+          <h3 className="text-xl font-medium flex items-center gap-x-3 glassmorphism px-3 py-2">
+            <IoIosStats size={24} className="opacity-70"/>
+            Personal Stats
+          </h3>
+          <div className="flex gap-x-6 gap-y-10 lg:gap-x-10 mb-6 mt-6">
+            <div className="flex flex-col glassmorphism px-3 py-2 rounded-lg">
+              <div className="text-xl text-accent">
+                <CountUp start={0} end={18} duration={15} />
+              </div>
+              <div className="text-sm tracking-[2px] font-primary">Years Old</div>
+            </div>
+            <div className="flex flex-col glassmorphism px-3 py-2 rounded-lg">
+              <div className="text-xl text-accent">
+                <CountUp start={0} end={45} duration={10} /> +
+              </div>
+              <div className="text-sm tracking-[2px] font-tertiary">
+                Repository
+              </div>
+            </div>
+            <div className="flex flex-col glassmorphism px-3 py-2 rounded-lg">
+              <div className="text-xl text-accent">
+                <CountUp start={0} end={5} duration={10} /> +
+              </div>
+              <div className="text-sm tracking-[2px] font-tertiary">
+                Experience
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mb-10">
+          <h3 className="text-xl font-medium flex items-center gap-x-3 glassmorphism px-3 py-2">
+            <FaTerminal size={20} className="opacity-70" />
+            Tech Skills
+          </h3>
+          <p className="text-sm opacity-70 mt-6">Technologies I work with</p>
+        </div>
+
+        <Swiper
+          // effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 25,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          pagination={{ clickable: true }}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {frameworks.map((framework, index) => (
+            <SwiperSlide
+              key={index}
+              className="w-56 h-48 bg-opacity-40 backdrop-blur-sm rounded-lg flex flex-col items-center justify-center"
+            >
+              <div className="tech-card bg-slate-800 bg-opacity-40 hover:bg-slate-700 transition-all duration-300 p-6 rounded-xl flex flex-col items-center justify-center w-40 h-40">
+                <div className="h-24 w-24 flex items-center justify-center">
+                  <img
+                    src={framework.imagesUrl}
+                    alt={framework.name}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+                <h4 className="mt-3 text-center font-medium">
+                  {framework.name}
+                </h4>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </motion.div>
     </section>
   );
 };
