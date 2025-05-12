@@ -196,6 +196,51 @@
   animation-delay: 0.3s;
 }
 
+.rainbow-border {
+  position: relative;
+  border-radius: 2px;
+  padding: 16px;
+  background: transparent;
+  z-index: 1;
+}
+
+.rainbow-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px; /* border width */
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  background-size: 300% 300%;
+  animation: rainbowAnimation 5s linear infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .aurora-bg {
   position: absolute;
   inset: 0;

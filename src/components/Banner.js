@@ -92,14 +92,14 @@ const Banner = () => {
             <IoIosStats size={24} className="opacity-70"/>
             Personal Stats
           </h3>
-          <div className="flex gap-x-6 gap-y-10 lg:gap-x-10 mb-6 mt-6">
-            <div className="flex flex-col glassmorphism px-3 py-2 rounded-lg">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10 lg:gap-x-10 mb-6 mt-6">
+            <div className="flex flex-col rainbow-border px-3 py-2 rounded-lg">
               <div className="text-xl text-accent">
                 <CountUp start={0} end={18} duration={15} />
               </div>
               <div className="text-sm tracking-[2px] font-primary">Years Old</div>
             </div>
-            <div className="flex flex-col glassmorphism px-3 py-2 rounded-lg">
+            <div className="flex flex-col rainbow-border px-3 py-2 rounded-lg">
               <div className="text-xl text-accent">
                 <CountUp start={0} end={45} duration={10} /> +
               </div>
@@ -107,7 +107,7 @@ const Banner = () => {
                 Repository
               </div>
             </div>
-            <div className="flex flex-col glassmorphism px-3 py-2 rounded-lg">
+            <div className="flex flex-col rainbow-border px-3 py-2 rounded-lg">
               <div className="text-xl text-accent">
                 <CountUp start={0} end={5} duration={10} /> +
               </div>

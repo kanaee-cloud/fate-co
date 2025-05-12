@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaTimes } from "react-icons/fa";
 
-const Modal = ({ isOpen, onClose, project: service }) => {
+const Modal = ({ isOpen, onClose, project: job }) => {
     if (!isOpen) return null;
   
     return (
@@ -24,23 +24,23 @@ const Modal = ({ isOpen, onClose, project: service }) => {
           >
             <FaTimes size={20} />
           </button>
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">{service.name}</h2>
-          {service.img && (
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">{job.name}</h2>
+          {job.img && (
             <img
-              src={service.img}
-              alt={service.name}
+              src={job.img}
+              alt={job.name}
               className="rounded-lg mb-4 w-full h-48 object-cover"
             />
           )}
-          <p className="text-gray-600">{service.description}</p>
-          <a
+          <p className="text-gray-600">{job.description}</p>
+          {/* <a
             href={service.url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-black justify-center mt-2 rounded-md hover:bg-gray py-2 transition-colors"
           >
             <FaGithub /> Github Repository
-          </a>
+          </a> */}
         </motion.div>
       </motion.div>
     );

@@ -1,9 +1,25 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import Image from "../assets/last.png";
+import { PiContactlessPayment } from "react-icons/pi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import Swal from "sweetalert2";
+
+const social = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/arsal-naufal",
+    logo: ""
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/kanaee-cloud",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/_arsalnaufal",
+  }
+]
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -61,10 +77,19 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 lg:section font-primary" id="contact">
-      <div className="container mx-auto">
+    <section className="" id="contact">
+      <div>
+             <h1 className="text-2xl mb-5 font-semibold flex items-center gap-x-2">
+               <PiContactlessPayment size={30} className="opacity-70" />
+               Contact
+             </h1>
+             <h2 className="text-[16px] text-justify opacity-70 font-light leading-relaxed">
+              For further information please contact me.
+             </h2>
+            <hr className="opacity-30 my-3" />
+           </div>
         <div className="flex flex-col lg:flex-row">
-          {/*text*/}
+          {/* text
           <motion.div
             className=" lg:flex flex-1 max-w-[320px] lg:max-w-[350px]"
             variants={fadeIn("down", 0.8)}
@@ -73,7 +98,7 @@ const Contact = () => {
             viewport={{ once: false, amount: 0.7 }}
           >
             <img src={Image} alt="" width={[500]} height={[500]} />
-          </motion.div>
+          </motion.div> */}
           {/*form*/}
           <motion.form
             variants={fadeIn("left", 0.4)}
@@ -83,9 +108,6 @@ const Contact = () => {
             className="flex-1 glassmorphism flex flex-col gap-y-6 pb-24 p-6 items-start"
             onSubmit={handleSubmit}
           >
-            <span className="text-gradient font-tertiary text-[2rem]">
-              Hubungi Saya
-            </span>
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:opacity-50 focus:border-gradient transition-all"
               type="text"
@@ -117,7 +139,7 @@ const Contact = () => {
             </button>
           </motion.form>
         </div>
-      </div>
+     
     </section>
   );
 };

@@ -20,7 +20,7 @@ const ResponsiveNavbar = () => {
   const navItems = [
     { id: 1, name: "Home", icon: <GoHome size={25} />, link: "/" },
     { id: 2, name: "About", icon: <BiUserCircle size={25} />, link: "/about" },
-    { id: 3, name: "Certificate", icon: <TbCertificate size={22} />, link: "/services" },
+    { id: 3, name: "Certificate", icon: <TbCertificate size={22} />, link: "/certificate" },
     { id: 4, name: "Project", icon: <RiGitRepositoryLine size={22} />, link: "/work" },
     { id: 5, name: "Contact", icon: <MdContacts size={22} />, link: "/contact" },
   ];

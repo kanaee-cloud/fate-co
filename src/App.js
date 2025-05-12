@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Banner from "./components/Banner";
-import AuroraBackground from "./components/Background/AuroraBackground";
+import Certificate from "./components/Certificate";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -26,6 +27,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Banner />} />
               <Route path="/about" element={<About />} />
+              <Route path="/certificate" element={<Certificate />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
         </div>
