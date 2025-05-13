@@ -89,7 +89,7 @@ const Banner = () => {
       >
         <div className="mb-8">
           <h3 className="text-xl font-medium flex items-center gap-x-3 glassmorphism px-3 py-2">
-            <IoIosStats size={24} className="opacity-70"/>
+            <IoIosStats size={24} className="opacity-70" />
             Personal Stats
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10 lg:gap-x-10 mb-6 mt-6">
@@ -97,7 +97,9 @@ const Banner = () => {
               <div className="text-xl text-accent">
                 <CountUp start={0} end={18} duration={15} />
               </div>
-              <div className="text-sm tracking-[2px] font-primary">Years Old</div>
+              <div className="text-sm tracking-[2px] font-primary">
+                Years Old
+              </div>
             </div>
             <div className="flex flex-col rainbow-border px-3 py-2 rounded-lg">
               <div className="text-xl text-accent">
@@ -126,32 +128,27 @@ const Banner = () => {
         </div>
 
         <Swiper
-          // effect={"coverflow"}
           grabCursor={true}
-          centeredSlides={true}
+          loop={true}
+          freeMode={true}
           slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 25,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
+          spaceBetween={30}
           autoplay={{
-            delay: 2000,
+            delay: 0, // jalan terus tanpa jeda
             disableOnInteraction: false,
-            pauseOnMouseEnter: true,
+            pauseOnMouseEnter: false,
           }}
-          pagination={{ clickable: true }}
-          modules={[EffectCoverflow, Pagination, Autoplay]}
+          speed={4000} // kecepatan scroll
+          modules={[Autoplay]}
           className="mySwiper"
         >
           {frameworks.map((framework, index) => (
             <SwiperSlide
               key={index}
-              className="w-56 h-48 bg-opacity-40 backdrop-blur-sm rounded-lg flex flex-col items-center justify-center"
+              className="w-56 flex items-center justify-center"
+              style={{ width: "220px" }} // pastikan lebar tetap
             >
-              <div className="tech-card bg-slate-800 bg-opacity-40 hover:bg-slate-700 transition-all duration-300 p-6 rounded-xl flex flex-col items-center justify-center w-40 h-40">
+              <div className="glassmorphism bg-slate-800 bg-opacity-40 hover:bg-slate-700 transition-all duration-300 p-6 rounded-xl flex flex-col items-center justify-center w-40 h-40">
                 <div className="h-24 w-24 flex items-center justify-center">
                   <img
                     src={framework.imagesUrl}
