@@ -14,6 +14,12 @@ const certificate = [
     img: "https://cdn.discordapp.com/attachments/896349028961378305/1371477469105885356/image.png?ex=6823476d&is=6821f5ed&hm=e0d1b2950b2025ae3968d736c545131005a346f41c7b70d89258e42f19c2a900&",
   },
   {
+    name: "Certificate of Competence in Web Development",
+    company: "Lembaga Sertifikasi Profesi Teknologi Digital",
+    periode: "January 2025 - January 2028",
+    img: "https://cdn.discordapp.com/attachments/896349028961378305/1372197400478879824/image.png?ex=6825e5ea&is=6824946a&hm=cafede43b4c2353cb91c753ba1e230731a66fc46d8840b64419b37fc456775c0&",
+  },
+  {
     name: "English for Business Communication",
     company: "The British Institute",
     periode: "May 2025",
@@ -68,7 +74,7 @@ const Certificate = () => {
             <img
               src={cert.img}
               alt=""
-              className="w-full h-auto object-cover rounded-t-lg "
+              className="w-full h-52 object-cover rounded-t-lg "
             />
             <div className="p-4 flex flex-col gap-y-2">
               <h4 className="text-sm font-semibold">{cert.name}</h4>

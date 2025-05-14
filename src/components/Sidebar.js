@@ -5,12 +5,13 @@ import { RiGitRepositoryLine } from "react-icons/ri";
 import { MdContacts } from "react-icons/md";
 import { TbCertificate } from "react-icons/tb";
 import { RiMenu4Line, RiCloseLine } from "react-icons/ri";
-import ReactBadge from "./Badges/ReactBadge";
-import LaravelBadge from "./Badges/LaravelBadge";
+// import ReactBadge from "./Badges/ReactBadge";
+// import LaravelBadge from "./Badges/LaravelBadge";
 import { TypeAnimation } from "react-type-animation";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants";
 import { useLocation } from "react-router-dom";
+import { MdOutlineVerified } from "react-icons/md";
 
 const ResponsiveNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -75,8 +76,7 @@ const ResponsiveNavbar = () => {
           />
           <h1 className="flex items-center gap-2">
             Arsal Nawfal
-            <ReactBadge />
-            <LaravelBadge />
+           <MdOutlineVerified className="text-accent"/>
           </h1>
           <motion.div
             className="text-sm font-primary"
@@ -140,10 +140,7 @@ const ResponsiveNavbar = () => {
             <div>
               <h1 className="flex items-center gap-1 text-sm">
                 Arsal Nawfal
-                <span className="flex scale-75">
-                  <ReactBadge />
-                  <LaravelBadge />
-                </span>
+                <MdOutlineVerified className="text-accent" />
               </h1>
               <motion.div
                 className="text-xs font-primary"
