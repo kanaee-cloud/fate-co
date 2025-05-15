@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import Certificate from "./components/Certificate";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
+import Chatbot from "./components/bot/ChatBot";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
               <Route path="/certificate" element={<Certificate />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/work" element={<Services />} />
+              <Route path="/bot" element={<Chatbot />} />
             </Routes>
           </div>
         </div>

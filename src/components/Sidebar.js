@@ -6,7 +6,7 @@ import { MdContacts } from "react-icons/md";
 import { TbCertificate } from "react-icons/tb";
 import { RiMenu4Line, RiCloseLine } from "react-icons/ri";
 // import ReactBadge from "./Badges/ReactBadge";
-// import LaravelBadge from "./Badges/LaravelBadge";
+import { LuBot } from "react-icons/lu";
 import { TypeAnimation } from "react-type-animation";
 import { motion, AnimatePresence } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -24,6 +24,7 @@ const ResponsiveNavbar = () => {
     { id: 3, name: "Certificate", icon: <TbCertificate size={22} />, link: "/certificate" },
     { id: 4, name: "Project", icon: <RiGitRepositoryLine size={22} />, link: "/work" },
     { id: 5, name: "Contact", icon: <MdContacts size={22} />, link: "/contact" },
+    { id: 6, name: "Bot", icon: <LuBot size={22} />, link: "/bot" },
   ];
 
   useEffect(() => {

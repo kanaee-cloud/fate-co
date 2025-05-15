@@ -13,6 +13,8 @@ import {
   SiFontawesome,
   SiMicrosoftexcel,
   SiReact,
+  SiFirebase,
+  SiAxios,
 } from "react-icons/si";
 
 const frameworkMap = {
@@ -31,6 +33,10 @@ const frameworkMap = {
   "Vanilla JS": {
     icon: <SiJavascript size={14} />,
     color: "bg-yellow-600 text-yellow-100",
+  },
+  JavaScript: {
+    icon: <SiJavascript size={14} />,
+    color: "bg-yellow-700 text-yellow-100",
   },
   "Excel JS": {
     icon: <SiMicrosoftexcel size={14} />,
@@ -64,9 +70,17 @@ const frameworkMap = {
     icon: <SiFontawesome size={14} />,
     color: "bg-blue-800 text-blue-200",
   },
-  "React JS": {
+  "React.js": {
     icon: <SiReact size={14} />,
     color: "bg-cyan-900 text-cyan-300",
+  },
+  Firebase: {
+    icon: <SiFirebase size={14} />,
+    color: "bg-amber-700 text-amber-100",
+  },
+  Axios: {
+    icon: <SiAxios size={14} />,
+    color: "bg-gray-800 text-gray-200",
   },
 };
 

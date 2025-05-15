@@ -47,6 +47,21 @@ const services = [
       "Fast API",
     ],
   },
+  {
+    name: "Deskify",
+    description:
+      "Berkontribusi sebagai fullstack developer dalam proyek pembuatan website yang bertujuan menyediakan komponen dan tools laptop dalam bentuk package secara online. Terlibat dalam berbagai tahapan pengembangan untuk menghasilkan platform yang fungsional dan informatif bagi pengguna.",
+    url: "https://github.com/orbit4it/web-frontend.git",
+    periode: "November 2024 - January 2024",
+    img: "/assets/deskify.png",
+    frameworks: [
+      "React.js",
+      "JavaScript",
+      "Tailwind",
+      "Firebase",
+      "Axios",
+    ],
+  },
 ];
 
 const Services = () => {

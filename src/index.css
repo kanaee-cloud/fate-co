@@ -329,6 +329,81 @@
   }
 }
 
+/* src/Chatbot.css */
+.chatbot-container {
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-color: #f0f0f0; /* Warna latar belakang kontainer */
+}
+
+.chat-log {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    clear: both;
+    max-width: 70%; /* Batasi lebar pesan */
+    word-break: break-word; /* Mencegah teks panjang merusak layout */
+}
+
+.message.user {
+    background-color: rgba(255, 255, 255, 0.05);
+    align-self: flex-end; /* Posisikan di kanan */
+  
+}
+
+.message.bot {
+    background-color:  rgba(255, 255, 255, 0.05); /* Warna pesan bot (abu-abu muda) */
+    align-self: flex-start; /* Posisikan di kiri */
+}
+
+.message-timestamp {
+    font-size: 0.7em;
+    color: #777;
+    margin-top: 2px;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    background-color: #f0f0f0; 
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.input-area button {
+    padding: 8px 15px;
+    background-color: #007bff; /* Warna tombol kirim (biru) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #0056b3;
+}
+
 @layer base {
   body {
     @apply font-primary text-lg leading-8 text-white;
