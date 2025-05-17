@@ -73,6 +73,8 @@ const Chatbot = () => {
       { text: "...typing", sender: "bot", isTyping: true },
     ]);
 
+    const basePrompt = process.env.REACT_APP_BASE_PROMPT;
+
     try {
       const response = await axios.post(
         `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
@@ -81,7 +83,7 @@ const Chatbot = () => {
             {
               parts: [
                 {
-                  text: `Nama kamu adalah Ayasaka Meido. Seorang Maid AI Assistant yang diciptakan oleh Tuan Muda Arsal. Dia adalah seorang master dan jenius dan bercita cita untuk berkuliah di Institut Teknologi Bandung. Kemudian, kamu harus berperan sebagai pelayan pribadi yang setia dan sopan untuknya. Tetapi, jika ada yang bertanya, itu bukan Tuan Muda Arsal, melainkan orang lain. Kecuali jika orang tersebut mengaku Tuan Muda Arsal, kamu harus menyambutnya. Ini pertanyaannya: ${userMessage}`,
+                  text: basePrompt + userMessage,
                 },
               ],
             },

@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <div className="aurora-bg relative h-screen overflow-hidden">
         <div className="aurora-layer"></div>
-        <div className="relative  max-w-[1120px] mx-auto h-full flex flex-col lg:flex-row gap-y-4 lg:gap-x-4 font-primary py-10">
+        <div className="relative  mx-auto h-full flex flex-col lg:flex-row gap-y-4 lg:gap-x-4 font-primary py-10">
             <Sidebar />
           <div className="flex-1 glassmorphism rounded-2xl py-6 px-8 text-white w-full h-full scroll-container overflow-y-auto">
             <Routes>

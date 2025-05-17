@@ -85,7 +85,7 @@ const Banner = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.3 }}
-        className="max-w-[800px] w-full mt-10"
+        className="w-full mt-10"
       >
         <div className="mb-8">
           <h3 className="text-xl font-medium flex items-center gap-x-3 glassmorphism px-3 py-2">
