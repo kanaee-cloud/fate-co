@@ -33,6 +33,17 @@ const education = [
     img: "https://smkn4bdg.sch.id/image/smkn4.png",
     frameworks: ["Laravel", "MySQL", "Tailwind", "Font Awesome"],
   },
+  {
+    name: "Front-end & Back-end Developer",
+    description:
+      "Berkontribusi sebagai Front-end Developer pada pengembangan platform daring Akuprim yang menyederhanakan pembayaran pajak, membantu konsultan pajak menghemat waktu dan mengurangi risiko kesalahan.",
+    company: "Coding Camp DBS Foundation",
+    place: "Remote",
+    periode: "January 2025 - Mei 2025",
+    role: "Student",
+    img: "https://media.licdn.com/dms/image/v2/D560BAQEONBPsiZnU8w/company-logo_200_200/company-logo_200_200/0/1729482329489?e=2147483647&v=beta&t=dkMktUDkXt7130IuDwAyygkV13ZUc5gnI4JksnlUQ84",
+    frameworks: ["Laravel", "MySQL", "Tailwind", "Font Awesome"],
+  },
 ];
 
 const About = () => {

@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { fadeIn } from "../variants";
 import { GoProjectRoadmap } from "react-icons/go";
 import Badge from "./Badges/Badge";
-import { PiContactlessPayment } from "react-icons/pi";
+
 
 const services = [
   {
@@ -51,7 +51,7 @@ const services = [
     name: "Deskify",
     description:
       "Berkontribusi sebagai fullstack developer dalam proyek pembuatan website yang bertujuan menyediakan komponen dan tools laptop dalam bentuk package secara online. Terlibat dalam berbagai tahapan pengembangan untuk menghasilkan platform yang fungsional dan informatif bagi pengguna.",
-    url: "https://github.com/orbit4it/web-frontend.git",
+    url: "https://deskify-seven.vercel.app",
     periode: "November 2024 - January 2024",
     img: "/assets/deskify.png",
     frameworks: [
@@ -117,8 +117,11 @@ const Services = () => {
                   <Badge key={i} name={fw} />
                 ))}
               </div>
+              
               <div className="absolute top-4 right-4 bg-black text-white p-1 rounded-full group-hover:scale-110 transition">
-                <BsArrowUpRight />
+                <a href={service.url}>
+                  <BsArrowUpRight />
+                </a>
               </div>
             </div>
           </motion.div>
