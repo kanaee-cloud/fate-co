@@ -8,40 +8,40 @@ import { GiAchievement } from "react-icons/gi";
 
 const certificate = [
   {
-    name: "Coding Camp by DBS Foundation",
-    company: "DBS Foundation",
-    periode: "May 2025",
-    img: "https://cdn.discordapp.com/attachments/896349028961378305/1371477469105885356/image.png?ex=6823476d&is=6821f5ed&hm=e0d1b2950b2025ae3968d736c545131005a346f41c7b70d89258e42f19c2a900&",
-  },
-  {
     name: "Certificate of Competence in Web Development",
     company: "Lembaga Sertifikasi Profesi Teknologi Digital",
     periode: "January 2025 - January 2028",
-    img: "https://cdn.discordapp.com/attachments/896349028961378305/1372197400478879824/image.png?ex=6825e5ea&is=6824946a&hm=cafede43b4c2353cb91c753ba1e230731a66fc46d8840b64419b37fc456775c0&",
+    img: "https://media.licdn.com/dms/image/v2/D4D2DAQFYTKgn9XQvzA/profile-treasury-document-cover-images_480/B4DZbT_0vKIEA8-/0/1747313450600?e=1748847600&v=beta&t=vldN1tJSiMM6iu_EI8Ykr9GpPliFusymWQWwNDSKxMU",
   },
   {
-    name: "English for Business Communication",
-    company: "The British Institute",
+    name: "Coding Camp by DBS Foundation",
+    company: "DBS Foundation",
     periode: "May 2025",
-    img: "https://cdn.discordapp.com/attachments/896349028961378305/1371478075077951560/image.png?ex=682347fd&is=6821f67d&hm=4a7ebc4e8bd66f37b215872409e8c80c175b9efeffbbfa2556efcb74488217e6&",
-  },
-  {
-    name: "Financial Literacy 101",
-    company: "Dicoding",
-    periode: "April 2025",
-    img: "https://cdn.discordapp.com/attachments/896349028961378305/1371478822695997521/image.png?ex=682348b0&is=6821f730&hm=a4fa22eec9755f577a742a82442859b1144b5c337a61a383c7c7c9743c5647eb&",
+    img: "https://media.licdn.com/dms/image/v2/D4D2DAQFvYVhu4o2f_Q/profile-treasury-document-cover-images_480/B4DZaQjc_HH0Aw-/0/1746181940299?e=1748847600&v=beta&t=Y6375j5Fehp5NtSC21jWLiFKxH_apYubPUEBye0PBnE",
   },
   {
     name: "Fundamental Front-End Web Development",
     company: "Dicoding",
     periode: "March 2025",
-    img: "https://cdn.discordapp.com/attachments/896349028961378305/1371479288314073210/image.png?ex=6823491f&is=6821f79f&hm=300f080b659da337597ff702420a9759331836c5f7add85cafa108214f48dc2b&",
+    img: "/assets/serti-1.png",
+  },
+  {
+    name: "English for Business Communication",
+    company: "The British Institute",
+    periode: "May 2025",
+    img: "https://media.licdn.com/dms/image/v2/D4D2DAQGEZeVBcxUguA/profile-treasury-document-cover-images_480/B4DZaluMxOG0Aw-/0/1746537075654?e=1748847600&v=beta&t=RcC3NDISQhCOgXNEXTjUhpPifLUEdkTYScebpV8swzk",
   },
   {
     name: "Uji Kemahiran Bahasa Indonesia",
     company: "Kementerian Pendidikan dan Kebudayaan",
-    periode: "December 2024",
-    img: "https://cdn.discordapp.com/attachments/896349028961378305/1371479717240373380/image.png?ex=68234985&is=6821f805&hm=89ac2d8bf52d7524d0459961870997c98333202aa0df83f951745ec7a3ae7208&",
+    periode: "December 2024 - December 2026",
+    img: "/assets/serti-2.png",
+  },
+  {
+    name: "Financial Literacy 101",
+    company: "Dicoding",
+    periode: "April 2025",
+    img: "/assets/financial.png",
   },
 ];
 
