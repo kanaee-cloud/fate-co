@@ -62,6 +62,21 @@ const services = [
       "Axios",
     ],
   },
+  {
+    name: "SEA Catering",
+    description:
+      "Membuat website SEA Catering yang menyediakan layanan catering untuk berbagai acara. Website ini dirancang untuk memberikan informasi lengkap tentang menu, harga, dan layanan yang ditawarkan.",
+    url: "https://seacatering-fe.vercel.app",
+    periode: "Juni 2025",
+    img: "/assets/sea.png",
+    frameworks: [
+      "React.js",
+      "TypeScript",
+      "Tailwind",
+      "MySQL",
+      "Axios",
+    ],
+  },
 ];
 
 const Services = () => {

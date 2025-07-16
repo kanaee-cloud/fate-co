@@ -11,13 +11,13 @@ const certificate = [
     name: "Certificate of Competence in Web Development",
     company: "Lembaga Sertifikasi Profesi Teknologi Digital",
     periode: "January 2025 - January 2028",
-    img: "https://media.licdn.com/dms/image/v2/D4D2DAQFYTKgn9XQvzA/profile-treasury-document-cover-images_480/B4DZbT_0vKIEA8-/0/1747313450600?e=1748847600&v=beta&t=vldN1tJSiMM6iu_EI8Ykr9GpPliFusymWQWwNDSKxMU",
+    img: "/assets/bnsp.png",
   },
   {
     name: "Coding Camp by DBS Foundation",
     company: "DBS Foundation",
     periode: "May 2025",
-    img: "https://media.licdn.com/dms/image/v2/D4D2DAQFvYVhu4o2f_Q/profile-treasury-document-cover-images_480/B4DZaQjc_HH0Aw-/0/1746181940299?e=1748847600&v=beta&t=Y6375j5Fehp5NtSC21jWLiFKxH_apYubPUEBye0PBnE",
+    img: "/assets/dbs.png",
   },
   {
     name: "Fundamental Front-End Web Development",
@@ -29,7 +29,7 @@ const certificate = [
     name: "English for Business Communication",
     company: "The British Institute",
     periode: "May 2025",
-    img: "https://media.licdn.com/dms/image/v2/D4D2DAQGEZeVBcxUguA/profile-treasury-document-cover-images_480/B4DZaluMxOG0Aw-/0/1746537075654?e=1748847600&v=beta&t=RcC3NDISQhCOgXNEXTjUhpPifLUEdkTYScebpV8swzk",
+    img: "/assets/british.png",
   },
   {
     name: "Uji Kemahiran Bahasa Indonesia",
